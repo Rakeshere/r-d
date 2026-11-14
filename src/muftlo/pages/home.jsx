@@ -1,4 +1,3 @@
-import CallNow from "@/muftlo/Home/WhatsApp";
 import Slider from "@/muftlo/Home/Slider";
 import VideoSlider from "@/muftlo/Home/VideoWork";
 import ProjectsShowcase from "@/muftlo/Home/Project";
