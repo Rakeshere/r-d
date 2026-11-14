@@ -31,7 +31,7 @@ export default function BlogsPage() {
     <main className="min-h-screen w-full text-white">
       <BlogHero
         title="Blogs"
-        imageSrc="https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=1206&auto=format&fit=crop"
+        imageSrc={getSiteMedia("blog-hero.jpg")}
         imageAlt="Person writing a blog post"
       />
 

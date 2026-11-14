@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import Link from "@/muftlo/next/link";
+import { getSiteMedia } from "@/muftlo/site-media";
 
 const InteractiveCard = ({
   title,
@@ -54,7 +55,7 @@ const InteractiveCard = ({
         <div
           className="relative h-full rounded-2xl text-white flex flex-col p-8 transition-all duration-500 overflow-hidden hover:shadow-[0_0_25px_var(--accent)]"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1761839257874-e56dfa2260cb?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=600')`,
+            backgroundImage: `url('${getSiteMedia("interactive-card.jpg")}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
