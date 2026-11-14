@@ -29,7 +29,6 @@ import productPhotography from "@/assets/site-media/photography-g14011171a.jpg.a
 import businessPortraits from "@/assets/site-media/business-corporate-portraits.webp.asset.json";
 import videoTips from "@/assets/site-media/video-production-tips.webp.asset.json";
 import portfolioPhotography from "@/assets/site-media/il_fullxfull.6607106719_ha19.jpg.asset.json";
-import webDevelopment from "@/assets/site-media/62_1659690052.png.asset.json";
 import ecommerce from "@/assets/site-media/E-Commerce-Development-Bloom-IT.jpg.asset.json";
 import webDev from "@/assets/site-media/webDev.jpg.asset.json";
 import seo from "@/assets/site-media/Search_Engine_Optimization.webp.asset.json";
@@ -51,7 +50,7 @@ const siteMedia = {
   "business-corporate-portraits.webp": businessPortraits,
   "video-production-tips.webp": videoTips,
   "il_fullxfull.6607106719_ha19.jpg": portfolioPhotography,
-  "62_1659690052.png": webDevelopment,
+  "62_1659690052.png": webDev,
   "Logo-Pastelli.png": pastelli,
   "E-Commerce-Development-Bloom-IT.jpg": ecommerce,
   "webDev.jpg": webDev,
