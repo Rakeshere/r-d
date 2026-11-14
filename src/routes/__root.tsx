@@ -12,6 +12,10 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import Navbar from "@/muftlo/Navbar";
+import Footer from "@/muftlo/Footer";
+import CallNow from "@/muftlo/Home/WhatsApp";
+import ModalForm from "@/muftlo/Home/InerestForm";
 
 function NotFoundComponent() {
   return (
@@ -75,27 +79,41 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
-    // Replace these placeholders with the app's name and description when first building the app.
-    // Each content route, / included, must still set its own head(). Never add og:image or
-    // twitter:image here: every page without its own would inherit the root's preview image.
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "R&D Software Solutions — Jaipur Digital Marketing Studio" },
+      {
+        name: "description",
+        content:
+          "R&D Software Solutions is a Jaipur-based creative studio for digital marketing, design, and storytelling.",
+      },
+      { name: "author", content: "R&D Software Solutions" },
+      {
+        property: "og:title",
+        content: "R&D Software Solutions — Jaipur Digital Marketing Studio",
+      },
+      {
+        property: "og:description",
+        content:
+          "R&D Software Solutions is a Jaipur-based creative studio for digital marketing, design, and storytelling.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
@@ -124,7 +142,11 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      <Navbar />
+      <CallNow />
+      <ModalForm />
       <Outlet />
+      <Footer />
     </QueryClientProvider>
   );
 }
