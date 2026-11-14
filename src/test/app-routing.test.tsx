@@ -14,4 +14,18 @@ describe("App routing", () => {
 
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
   });
+
+  it.each([
+    ["/services", "/services"],
+    ["/about", "/about"],
+    ["/contact", "/contact"],
+    ["/careers", "/careers"],
+    ["/blog", "/blog/"],
+    ["/blog article", "/blog/muftlo-digital-growth"],
+  ])("matches the migrated %s page", (_label, path) => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    const matches = router.matchRoutes(path);
+
+    expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
+  });
 });
