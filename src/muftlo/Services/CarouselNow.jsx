@@ -2,31 +2,32 @@
 
 import Link from "@/muftlo/next/link";
 import { useState, useEffect } from "react";
+import { getSiteMedia } from "@/muftlo/site-media";
 
 const ChooseUs = () => {
   const slides = [
     {
       title: "Transform Your Brand Presence",
       desc: "Digital strategies crafted to boost your visibility and engagement. Experience real growth with marketing built for impact.",
-      img: "https://img.freepik.com/free-vector/marketing-promotional-campaign-brand-awareness-building-branded-workshop-workshop-organized-by-brand-useful-marketing-event-concept_335657-115.jpg?semt=ais_hybrid&w=740&q=80",
+      img: getSiteMedia("marketing-promotional-campaign.jpg"),
       btn: "Explore More",
     },
     {
       title: "Boost Visibility with Powerful SEO",
       desc: "Rank higher, get discovered, and attract the right audience. Smart optimization that drives consistent, organic growth.",
-      img: "https://mydmi.imgix.net/shutterstock_2502022545.jpg?crop=edges&fit=crop&fm=auto&h=1260&ixlib=php-4.1.0&q=40&w=2400&s=44623a2c5aabd16041862c1348d62b1a",
+      img: getSiteMedia("shutterstock_2502022545.jpg"),
       btn: "Explore More",
     },
     {
       title: "Tell Your Story with Stunning Photo & Video",
       desc: "High-quality visuals that elevate your brand identity. Create lasting impressions through cinematic content.",
-      img: "https://static.vecteezy.com/system/resources/thumbnails/038/904/859/small/ai-generated-silhouette-images-of-video-production-behind-the-scenes-making-of-tv-commercial-movie-that-film-crew-team-lightman-photo.jpg",
+      img: getSiteMedia("video-production-crew.jpg"),
       btn: "Explore More",
     },
     {
       title: "Convert Viewers into Leads with Powerful Visuals",
       desc: "Engaging photo & video content that builds trust. Showcase your brand and inspire action instantly.",
-      img: "https://www.artonicweb.com/wp-content/uploads/2024/08/artonic-photography-in-digital-marketing.jpg",
+      img: getSiteMedia("photography-in-digital-marketing.jpg"),
       btn: "Explore More",
     },
   ];

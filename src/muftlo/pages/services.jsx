@@ -14,6 +14,7 @@ import { Button } from "@/muftlo/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { ThreeDMarqueeDemoSecond } from "@/muftlo/Services/ThreeDMarquee";
 import ChooseUs from "@/muftlo/Services/CarouselNow";
+import { getSiteMedia } from "@/muftlo/site-media";
 
 export default function ServicesPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,8 +51,7 @@ export default function ServicesPage() {
         "SEO enhances your website's visibility on search engines, bringing in organic traffic and helping potential customers find you easily.",
       advantages:
         "Improves search rankings, increases organic reach, and enhances brand credibility by making your site more authoritative and trustworthy.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGPv3CJNXhIhPTMqJy0Aycy5ibjxjGJBsvoQ&s",
+      image: getSiteMedia("Cover.Search-engine-marketing.jpg"),
       color: "bg-blue-50",
     },
     {
@@ -60,8 +60,7 @@ export default function ServicesPage() {
         "SEM combines paid search ads with keyword targeting to place your brand at the top of search results.",
       advantages:
         "Provides instant visibility on search engines, drives qualified traffic, and generates quick results to complement long-term SEO efforts.",
-      image:
-        "https://www.pixartprinting.co.uk/blog/wp-content/uploads/2022/10/Cover.Search-engine-marketing.jpg",
+      image: getSiteMedia("Cover.Search-engine-marketing.jpg"),
       color: "bg-indigo-50",
     },
     {
@@ -70,7 +69,7 @@ export default function ServicesPage() {
         "SMM builds brand presence across social media platforms, fostering engagement and creating a loyal audience.",
       advantages:
         "Enhances brand recognition, facilitates direct interaction with your audience, and supports targeted ad campaigns for specific demographics.",
-      image: "https://webtraffic.agency/uploads/blog/blog240624044117.jpg",
+      image: getSiteMedia("blog240624044117.jpg"),
       color: "bg-purple-50",
     },
     {
@@ -79,8 +78,7 @@ export default function ServicesPage() {
         "Our team manages Google Ads campaigns to attract high-intent traffic using strategic targeting and budget optimization.",
       advantages:
         "Delivers measurable ROI, provides precise targeting options, and boosts visibility among ready-to-buy audiences.",
-      image:
-        "https://www.dicslaxminagar.com/blog/wp-content/uploads/2024/05/How-to-Promote-Your-Online-Courses-With-Google-Ads.png",
+      image: getSiteMedia("google-ads-courses.png"),
       color: "bg-green-50",
     },
     {
@@ -89,8 +87,7 @@ export default function ServicesPage() {
         "Branding services encompass logo design, brand strategy, and content creation to establish a cohesive identity.",
       advantages:
         "Builds a strong brand identity, fosters customer trust, and differentiates your business from competitors.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2T8bo2aBGIN0a89w1H33mHvM7_ihd2An2WQ&s",
+      image: getSiteMedia("Logo-Pastelli.png"),
       color: "bg-pink-50",
     },
     {
@@ -99,8 +96,7 @@ export default function ServicesPage() {
         "PPC ads target specific keywords, placing your business in front of a relevant audience and driving immediate traffic.",
       advantages:
         "Offers flexible budgeting, measurable results, and drives immediate traffic that can lead to high conversions.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUbo3dxdyB1wnI83R_0za0bWN64v0RKJ1hBw&s",
+      image: getSiteMedia("Google-Ads.png"),
       color: "bg-orange-50",
     },
   ];
@@ -110,48 +106,42 @@ export default function ServicesPage() {
       title: "Product Photography",
       description:
         "High-quality product images that emphasize details, features, and aesthetics, ideal for e-commerce, social media, and ad campaigns.",
-      image:
-        "https://zebrastudio.org/wp-content/uploads/2022/06/photography-g14011171a_1920-min-1024x683.jpg",
+      image: getSiteMedia("photography-g14011171a.jpg"),
       color: "bg-blue-50",
     },
     {
       title: "Real Estate Photography",
       description:
         "Professional property photos that showcase real estate in its best light, helping properties stand out in a competitive market.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpNlMgt0CEskaf6lyS1VqvzM-0BWRdQ-Zf_A&s",
+      image: getSiteMedia("Reliant.jpg"),
       color: "bg-green-50",
     },
     {
       title: "Corporate Photography",
       description:
         "Professional shoots that capture corporate events, team photos, and office environments, building a trustworthy brand image.",
-      image:
-        "https://jamesmaherphotography.com/wp-content/uploads/2022/04/business-corporate-portraits-1.webp",
+      image: getSiteMedia("business-corporate-portraits.webp"),
       color: "bg-indigo-50",
     },
     {
       title: "Video Production",
       description:
         "From explainer videos to brand stories, we create compelling video content that engages audiences and drives results.",
-      image:
-        "https://cdn.prod.website-files.com/685be7dcd32275d383065239/685be7dcd32275d3830679a5_Blog%20Cover_04_2023_%2015%20Video%20Production%20Tips%20for%20Making%20Engaging%20Professional%20Videos.webp",
+      image: getSiteMedia("video-production-tips.webp"),
       color: "bg-purple-50",
     },
     {
       title: "Social Media Content",
       description:
         "Custom photo and video content optimized for social media platforms, designed to engage followers and build brand presence.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31LrMNVYPPj1Vex9Zpuzk_oaghQIKlRJ1Fg&s",
+      image: getSiteMedia("The Wood A.jpg"),
       color: "bg-pink-50",
     },
     {
       title: "Portfolio Photography",
       description:
         "Comprehensive photo sessions for personal or professional portfolios, including headshots, modeling, and creative projects.",
-      image:
-        "https://i.etsystatic.com/20116942/r/il/ebb4be/6607106719/il_fullxfull.6607106719_ha19.jpg",
+      image: getSiteMedia("il_fullxfull.6607106719_ha19.jpg"),
       color: "bg-orange-50",
     },
   ];
@@ -163,8 +153,7 @@ export default function ServicesPage() {
         "Development of front-end and back-end systems for a seamless user experience.",
       advantages:
         "Delivers a cohesive, efficient website, provides a complete and functional digital experience, and supports future scalability.",
-      image:
-        "https://sklc-tinymce-2021.s3.amazonaws.com/comp/2022/08/62_1659690052.png",
+      image: getSiteMedia("62_1659690052.png"),
       color: "bg-blue-50",
     },
     {
@@ -173,8 +162,7 @@ export default function ServicesPage() {
         "Custom-built e-commerce sites that offer a user-friendly shopping experience and streamlined checkout processes.",
       advantages:
         "Boosts online sales, enhances customer experience, and integrates payment and inventory management solutions.",
-      image:
-        "https://i0.wp.com/www.magetop.com/blog/wp-content/uploads/2022/06/E-Commerce-Development-Bloom-IT.jpg?resize=800%2C445&ssl=1",
+      image: getSiteMedia("E-Commerce-Development-Bloom-IT.jpg"),
       color: "bg-green-50",
     },
     {
@@ -183,8 +171,7 @@ export default function ServicesPage() {
         "Development of websites powered by CMS platforms like WordPress, making it easy for clients to manage their content.",
       advantages:
         "Simplifies content updates, reduces maintenance costs, and empowers clients to manage their website without technical expertise.",
-      image:
-        "https://www.scnsoft.com/application-development/cms-development/cms-development-services-cover-picture-03.svg",
+      image: getSiteMedia("cms-development-services-cover-picture-03.svg"),
       color: "bg-purple-50",
     },
     {
@@ -193,8 +180,7 @@ export default function ServicesPage() {
         "Built-in SEO strategies to ensure your website is optimized for search engines from day one.",
       advantages:
         "Improves search visibility, attracts organic traffic, and strengthens your online presence.",
-      image:
-        "https://cdn.botpenguin.com/assets/website/Search_Engine_Optimization_d547319792.webp",
+      image: getSiteMedia("Search_Engine_Optimization.webp"),
       color: "bg-orange-50",
     },
   ];
