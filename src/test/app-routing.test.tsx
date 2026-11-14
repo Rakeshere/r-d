@@ -21,7 +21,7 @@ describe("App routing", () => {
     ["/contact", "/contact"],
     ["/careers", "/careers"],
     ["/blog", "/blog/"],
-    ["/blog article", "/blog/preview"],
+    ["/blog article", "/blog/muftlo-digital-growth"],
   ])("matches the migrated %s page", (_label, path) => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
     const matches = router.matchRoutes(path);

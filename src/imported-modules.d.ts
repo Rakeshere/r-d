@@ -1,6 +1,4 @@
-declare module "*.jsx" {
-  import type { ComponentType } from "react";
-
-  const component: ComponentType;
+declare module "@/muftlo/*" {
+  const component: import("react").ComponentType<Record<string, never>>;
   export default component;
 }
