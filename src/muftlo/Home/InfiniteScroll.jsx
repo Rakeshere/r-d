@@ -92,8 +92,8 @@ const JourneySection = () => (
       </div>
 
       {/* Desktop diagram */}
-      <div className="relative mt-8 hidden aspect-[1000/760] md:block">
-        <svg viewBox="0 0 1000 760" className="absolute inset-0 size-full" aria-hidden="true">
+      <div className="relative mt-8 hidden aspect-[1000/850] md:block">
+        <svg viewBox="0 0 1000 850" className="absolute inset-0 size-full" aria-hidden="true">
           <Rings />
           {steps.map((s, i) => (
             <g key={s.n}>
@@ -127,7 +127,7 @@ const JourneySection = () => (
             </div>
           ))}
         </div>
-        <svg viewBox="150 520 700 240" className="mt-6 w-full" aria-hidden="true"><Rings /></svg>
+        <svg viewBox="0 500 1000 350" className="mt-6 w-full" aria-hidden="true"><Rings /></svg>
       </div>
 
       <div className="mt-10 flex justify-center">
