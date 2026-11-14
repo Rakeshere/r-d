@@ -56,7 +56,7 @@ const Rings = ({ className = "" }) => (
         <stop offset="0%" stopColor="#faf7f2" stopOpacity="0.7" />
         <stop offset="100%" stopColor="#f7931e" stopOpacity="0.1" />
       </linearGradient>
-      <filter id="blurGlow"><feGaussianBlur stdDeviation="18" /></filter>
+      <filter id="blurGlow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="18" /></filter>
     </defs>
     <ellipse cx="500" cy={RING_Y + 30} rx="420" ry="150" fill="url(#ringGlow)" />
     <motion.g animate={{ opacity: [0.85, 1, 0.85] }} transition={{ duration: 4, repeat: Infinity }}>
