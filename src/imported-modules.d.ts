@@ -1,4 +1,4 @@
 declare module "@/muftlo/*" {
-  const component: import("react").ComponentType<Record<string, never>>;
+  const component: () => import("react").ReactNode;
   export default component;
 }
