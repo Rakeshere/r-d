@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/muftlo/ui/button";
+import { getSiteMedia } from "@/muftlo/site-media";
 
 const projects = [
   {
     id: 1,
     title: "Dotsquares",
     category: "Company Profile Video Production",
-    image: "/Dots.jpg",
+    image: getSiteMedia("Dots.jpg"),
     metrics: [
       {
         value: "Professional Standards",
@@ -45,7 +46,7 @@ const projects = [
     id: 3,
     title: "Sondaryam",
     category: "Podcast & Multi-Platform Branding",
-    image: "/Sondaryam.jpg",
+    image: getSiteMedia("Sondaryam.jpg"),
     metrics: [
       {
         value: "4x Brand Growth",
@@ -62,7 +63,7 @@ const projects = [
     id: 4,
     title: "RNT School",
     category: "Complete Digital Marketing & Web Presence",
-    image: "/RNT.jpg",
+    image: getSiteMedia("RNT.jpg"),
     metrics: [
       {
         value: "#1 Google Rank",
@@ -79,7 +80,7 @@ const projects = [
     id: 5,
     title: "Opel Home",
     category: "Logo Design & Branding",
-    image: "/Opel Home.jpg",
+    image: getSiteMedia("Opel Home.jpg"),
     metrics: [
       {
         value: "Professional Logo",
@@ -96,7 +97,7 @@ const projects = [
     id: 6,
     title: "Pastelli",
     category: "Fashion Brand Marketing",
-    image: "/Pastelli.jpg",
+    image: getSiteMedia("Pastelli.jpg"),
     metrics: [
       {
         value: "91k+ Followers",
@@ -113,7 +114,7 @@ const projects = [
     id: 7,
     title: "The Antiques Furniture",
     category: "SEO & Digital Branding",
-    image: "/The Wood A.jpg",
+    image: getSiteMedia("The Wood A.jpg"),
     metrics: [
       {
         value: "Top Google Rank",
@@ -130,7 +131,7 @@ const projects = [
     id: 8,
     title: "Force Lifts",
     category: "Digital Branding & Content Production",
-    image: "/ForceLifts.jpg",
+    image: getSiteMedia("ForceLifts.jpg"),
     metrics: [
       { value: "Premium Content", label: "Reels, testimonials, infographics" },
       {
@@ -144,7 +145,7 @@ const projects = [
     id: 9,
     title: "Reliant Housing",
     category: "Real Estate Digital Marketing",
-    image: "/Reliant.jpg",
+    image: getSiteMedia("Reliant.jpg"),
     metrics: [
       {
         value: "Day-One Marketing",
@@ -161,7 +162,7 @@ const projects = [
     id: 10,
     title: "Parth Sarthi Builder",
     category: "Brand Elevation & GMB Optimization",
-    image: "/parth.png",
+    image: getSiteMedia("parth.png"),
     metrics: [
       {
         value: "Fresh Brand Image",
@@ -178,7 +179,7 @@ const projects = [
     id: 11,
     title: "Shubh Weddings Magazine",
     category: "Event Digital Partner",
-    image: "/shubh Weddings.jpg",
+    image: getSiteMedia("shubh Weddings.jpg"),
     metrics: [
       {
         value: "Award Show Partner",
@@ -195,7 +196,7 @@ const projects = [
     id: 12,
     title: "GKB Group",
     category: "Builders & Developers",
-    image: "/GKB.jpg",
+    image: getSiteMedia("GKB.jpg"),
     metrics: [
       {
         value: "Brand Establishment",

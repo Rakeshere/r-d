@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { getSiteMedia } from "@/muftlo/site-media";
 import "./Slider.css";
 
 const stories = [
-  { name: "Dotsquares", image: "/Dots.jpg", title: "Company profile video production", quote: "Working with R&D Software Solutions has been a fantastic experience. They handled our branding, promotions, and complete marketing with full dedication and creativity.", person: "Ashish Mantri", role: "Vice President" },
-  { name: "Pastelli", image: "/Pastelli.jpg", title: "Fashion brand marketing", quote: "Thanks to R&D Software Solutions, Pastelli’s online presence and sales have grown tremendously. Their end-to-end support in marketing and web management is truly exceptional.", person: "Arohi Mehta", role: "Owner" },
-  { name: "Reliant Housing", image: "/Reliant.jpg", title: "Real estate digital marketing", quote: "Working with R&D Software Solutions has transformed our marketing efforts. Their all-in-one solutions and innovative approach in real estate promotions have delivered excellent results for Reliant Housing.", person: "Rakesh Mahal", role: "Director" },
-  { name: "Sondaryam", image: "/Sondaryam.jpg", title: "Podcast & multi-platform branding", quote: "We are impressed with R&D Software Solutions’s innovation and dedication. From complete 360 product visuals to engaging marketing podcasts, they handled everything flawlessly. Great team to work with!", person: "Satyendra Parnami", role: "Director" },
-  { name: "Force Lifts", image: "/ForceLifts.jpg", title: "Digital branding & content production", quote: "Outstanding service by R&D Software Solutions! They handled everything from elevations to full marketing strategy, helping Force Lifts stand out in the market. Highly recommended!", person: "Neeraj Sharma", role: "Director" },
+  { name: "Dotsquares", image: getSiteMedia("Dots.jpg"), title: "Company profile video production", quote: "Working with R&D Software Solutions has been a fantastic experience. They handled our branding, promotions, and complete marketing with full dedication and creativity.", person: "Ashish Mantri", role: "Vice President" },
+  { name: "Pastelli", image: getSiteMedia("Pastelli.jpg"), title: "Fashion brand marketing", quote: "Thanks to R&D Software Solutions, Pastelli’s online presence and sales have grown tremendously. Their end-to-end support in marketing and web management is truly exceptional.", person: "Arohi Mehta", role: "Owner" },
+  { name: "Reliant Housing", image: getSiteMedia("Reliant.jpg"), title: "Real estate digital marketing", quote: "Working with R&D Software Solutions has transformed our marketing efforts. Their all-in-one solutions and innovative approach in real estate promotions have delivered excellent results for Reliant Housing.", person: "Rakesh Mahal", role: "Director" },
+  { name: "Sondaryam", image: getSiteMedia("Sondaryam.jpg"), title: "Podcast & multi-platform branding", quote: "We are impressed with R&D Software Solutions’s innovation and dedication. From complete 360 product visuals to engaging marketing podcasts, they handled everything flawlessly. Great team to work with!", person: "Satyendra Parnami", role: "Director" },
+  { name: "Force Lifts", image: getSiteMedia("ForceLifts.jpg"), title: "Digital branding & content production", quote: "Outstanding service by R&D Software Solutions! They handled everything from elevations to full marketing strategy, helping Force Lifts stand out in the market. Highly recommended!", person: "Neeraj Sharma", role: "Director" },
 ];
 
 export default function BrandStories() {

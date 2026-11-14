@@ -3,25 +3,26 @@ import React from "react";
 import Link from "@/muftlo/next/link";
 import { motion } from "framer-motion";
 import { BlogHero } from "@/muftlo/Blog/BlogSection";
+import { getSiteMedia } from "@/muftlo/site-media";
 
 export default function BlogsPage() {
   const blogs = [
     {
       title: "R&D Software Solutions: Your Creative Digital Growth Partner",
       desc: "R&D Software Solutions blends creativity with smart digital strategies to boost your brand online. Reach the right audience, grow faster, and turn ideas into measurable success.",
-      img: "/muftloBlog.jpg",
+      img: getSiteMedia("muftloBlog.jpg"),
       slug: "muftlo-digital-growth",
     },
     {
       title: "Top Digital Marketing Services That Boost Leads & Sales",
       desc: "In today’s competitive digital world, having an online presence is not enough. What you need is a marketing system that consistently generates quality leads, improves brand visibility, and turns visitors into paying customers.",
-      img: "/Anton Tkachev.jpg",
+      img: getSiteMedia("Anton Tkachev.jpg"),
       slug: "top-digital-marketing-services",
     },
     {
       title: "Why Every Industry Needs Professional Digital Marketing",
       desc: "No matter what business you run real estate, e-commerce, healthcare, finance, education, hospitality, or retail your audience lives online. This makes digital marketing not just an option, but a business necessity.",
-      img: "/Best Digital Marketing.jpg",
+      img: getSiteMedia("Best Digital Marketing.jpg"),
       slug: "importance-of-digital-marketing",
     },
   ];

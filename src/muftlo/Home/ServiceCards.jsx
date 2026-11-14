@@ -2,26 +2,27 @@ import React from "react";
 import Link from "@/muftlo/next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getSiteMedia } from "@/muftlo/site-media";
 
 const services = [
   {
     title: "Web Development",
     category: "DIGITAL EXPERIENCES",
     description: "Fast, thoughtful websites and software built around the way your business works.",
-    image: "/image.png",
+    image: getSiteMedia("image.png"),
     featured: true,
   },
   {
     title: "Digital Marketing",
     category: "GROWTH & VISIBILITY",
     description: "",
-    image: "/Best Digital Marketing.jpg",
+    image: getSiteMedia("Best Digital Marketing.jpg"),
   },
   {
     title: "Photo & Video",
     category: "CONTENT & CREATIVE",
     description: "",
-    image: "/The Wood A.jpg",
+    image: getSiteMedia("The Wood A.jpg"),
   },
 ];
 

@@ -12,6 +12,7 @@ import {
 import "@/muftlo/About/about.css";
 import WorkflowSection from "@/muftlo/About/aboutPipeline";
 import LampDemo from "@/muftlo/ui/lamp";
+import { getSiteMedia } from "@/muftlo/site-media";
 
 export default function AboutPage() {
   const [visibleSections, setVisibleSections] = useState(new Set());
@@ -147,7 +148,7 @@ export default function AboutPage() {
             }`}
           >
             <img
-              src="/muftloBlog.jpg"
+              src={getSiteMedia("muftloBlog.jpg")}
               alt="About R&D Software Solutions"
               className="rounded-xl w-full object-cover"
             />

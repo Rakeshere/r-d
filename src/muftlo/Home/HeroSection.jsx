@@ -1,6 +1,7 @@
 
 import "./HeroSection.css";
 import Link from "@/muftlo/next/link";
+import { getSiteMedia } from "@/muftlo/site-media";
 import { Star, StarHalf } from "lucide-react";
 
 export default function MarketingSection() {
@@ -82,19 +83,19 @@ export default function MarketingSection() {
 
               <div className="flex items-center">
                 <img
-                  src="/googleLogo.png"
+                  src={getSiteMedia("googleLogo.png")}
                   alt="Google"
                   className="h-8 w-auto md:h-20 -ml-2 object-contain"
                 />
                 <img
-                  src="/metaLogo.png"
+                  src={getSiteMedia("metaLogo.png")}
                   alt="Meta"
                   className="h-8 w-auto md:h-20 object-contain"
                 />
               </div>
 
               <div className="flex items-center gap-2 mt-2">
-                <img src="/google.png" alt="Google" className="w-6 h-6" />
+                <img src={getSiteMedia("google.png")} alt="Google" className="w-6 h-6" />
 
                 <div className="flex relative">
                   {[...Array(4)].map((_, i) => (

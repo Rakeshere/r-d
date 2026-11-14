@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useParams } from "@/muftlo/next/navigation";
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { getSiteMedia } from "@/muftlo/site-media";
 
 export default function BlogDetailPage() {
   const { slug } = useParams();
@@ -20,7 +21,7 @@ export default function BlogDetailPage() {
       date: "01/12/2025",
       author: "R&D Software Solutions Agency",
       cover:
-        "/muftloBlog.jpg",
+        getSiteMedia("muftloBlog.jpg"),
       intro:
         "What if your marketing agency didn’t just run ads, but understood your business like a partner? R&D Software Solutions was born from these questions — and today it's a revolution.",
       sections: [
@@ -87,7 +88,7 @@ export default function BlogDetailPage() {
       date: "05/12/2025",
       author: "R&D Software Solutions Agency",
       cover:
-        "/Anton Tkachev.jpg",
+        getSiteMedia("Anton Tkachev.jpg"),
       intro:
         "Digital marketing is evolving fast. If your business wants quick results, these services are dominating 2025 with the strongest ROI.",
       sections: [
@@ -140,7 +141,7 @@ export default function BlogDetailPage() {
       date: "06/12/2025",
       author: "R&D Software Solutions Agency",
       cover:
-        "/Best Digital Marketing.jpg",
+        getSiteMedia("Best Digital Marketing.jpg"),
       intro:
         "Every business, small or large, survives through visibility. Digital marketing ensures brands reach the right customers at the right time.",
       sections: [
