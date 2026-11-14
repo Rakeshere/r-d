@@ -28,7 +28,7 @@ const projects = [
     id: 2,
     title: "Search Abode",
     category: "Digital Marketing & Social Media Strategy",
-    image: getSiteMedia("searchabode-the-best-real-estate-agent-in-jaipur.jpg"),
+    image: getSiteMedia("Best Digital Marketing.jpg"),
     metrics: [
       {
         value: "4x Growth",

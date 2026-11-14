@@ -153,7 +153,7 @@ export default function ServicesPage() {
         "Development of front-end and back-end systems for a seamless user experience.",
       advantages:
         "Delivers a cohesive, efficient website, provides a complete and functional digital experience, and supports future scalability.",
-      image: getSiteMedia("62_1659690052.png"),
+      image: getSiteMedia("image.png"),
       color: "bg-blue-50",
     },
     {
@@ -171,7 +171,7 @@ export default function ServicesPage() {
         "Development of websites powered by CMS platforms like WordPress, making it easy for clients to manage their content.",
       advantages:
         "Simplifies content updates, reduces maintenance costs, and empowers clients to manage their website without technical expertise.",
-      image: getSiteMedia("cms-development-services-cover-picture-03.svg"),
+      image: getSiteMedia("webDev.jpg"),
       color: "bg-purple-50",
     },
     {
