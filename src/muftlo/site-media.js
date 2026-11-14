@@ -32,7 +32,7 @@ import videoTips from "@/assets/site-media/video-production-tips.webp.asset.json
 import portfolioPhotography from "@/assets/site-media/il_fullxfull.6607106719_ha19.jpg.asset.json";
 import webDevelopment from "@/assets/site-media/62_1659690052.png.asset.json";
 import ecommerce from "@/assets/site-media/E-Commerce-Development-Bloom-IT.jpg.asset.json";
-import cmsDevelopment from "@/assets/site-media/cms-development-services-cover-picture-03.svg.asset.json";
+import webDev from "@/assets/site-media/webDev.jpg.asset.json";
 import seo from "@/assets/site-media/Search_Engine_Optimization.webp.asset.json";
 import blogHero from "@/assets/site-media/blog-hero.jpg.asset.json";
 import interactiveCard from "@/assets/site-media/interactive-card.jpg.asset.json";
@@ -53,7 +53,7 @@ const siteMedia = {
   "il_fullxfull.6607106719_ha19.jpg": portfolioPhotography,
   "62_1659690052.png": webDevelopment,
   "E-Commerce-Development-Bloom-IT.jpg": ecommerce,
-  "cms-development-services-cover-picture-03.svg": cmsDevelopment,
+  "webDev.jpg": webDev,
   "Search_Engine_Optimization.webp": seo,
   "blog-hero.jpg": blogHero,
   "interactive-card.jpg": interactiveCard,
