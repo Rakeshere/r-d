@@ -72,7 +72,7 @@ const JourneySection = () => (
     <div className="pointer-events-none absolute left-1/2 top-2/3 h-[600px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-orange/10 blur-3xl" />
     <div className="relative mx-auto max-w-6xl">
       <div className="grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-start">
-        <p className="flex items-center gap-2 text-xs text-brand-cream/80 md:pt-3">
+        <p className="flex items-center gap-2 text-xs font-semibold uppercase text-brand-orange md:pt-3">
           <span className="grid size-4 grid-cols-2 gap-px"><i className="rounded-tl-full bg-brand-orange" /><i className="rounded-tr-full bg-brand-cream" /><i className="rounded-bl-full bg-brand-cream" /><i className="rounded-br-full bg-brand-orange" /></span>
           Work process
         </p>
@@ -82,9 +82,9 @@ const JourneySection = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
-          className="text-5xl font-medium leading-[0.95] tracking-tight drop-shadow-[0_0_25px_rgba(247,147,30,0.55)] md:text-7xl"
+          className="text-5xl font-extrabold leading-[0.95] tracking-tight text-brand-cream md:text-7xl"
         >
-          <span className="text-brand-cream/70">How We Bring</span><br />Brands to Life
+          How We Bring<br />Brands to Life
         </motion.h2>
         <p className="max-w-xs text-xs leading-relaxed text-brand-cream/60 md:pt-16">
           A clear, connected process from first insight to lasting growth — turning complex business goals into brands people notice, trust and choose.
