@@ -3,6 +3,7 @@
 - [x] Inspect the uploaded archive and record its detected capabilities.
 - [x] Preserve the source design system and bring over shared site modules and media.
 - [x] Add all source public pages and page-specific metadata.
-- [ ] Fix any import, typecheck, or preview errors found during validation.
-- [ ] Verify all public routes, images, and core interactions in the running preview.
-- [ ] Update the migration ledger and report any externally blocked verification.
+- [x] Fix the imported-page type declarations and resolve unavailable image references.
+- [x] Verify public routes, all three blog articles, the contact form handoff, and a 390px phone viewport.
+- [x] Update the migration ledger with verified work and remaining external checks.
+- [ ] Publish the site — blocked because the release was declined.

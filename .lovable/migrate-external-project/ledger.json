@@ -2,17 +2,17 @@
   "source": "code-archive",
   "archive": "rndglobal-main_1.zip",
   "capabilities": [
-    { "capability": "application code and routes", "source": "uploaded archive", "outcome": "migrate", "status": "pending", "next_action": "Port all public pages and shared UI into the existing TanStack Start project while preserving the archive's design." },
-    { "capability": "design assets and uploaded file bytes", "source": "uploaded archive", "outcome": "migrate", "status": "pending", "next_action": "Bring over referenced logos, project imagery, and other required public assets." },
+    { "capability": "application code and routes", "source": "uploaded archive", "outcome": "migrate", "status": "verified", "next_action": "All archive pages are present; seven navigation tests and the public-page browser checks passed." },
+    { "capability": "design assets and uploaded file bytes", "source": "uploaded archive", "outcome": "migrate", "status": "verified", "next_action": "Migrated media pointers resolve, and no broken images appeared on checked public pages." },
     { "capability": "database schema", "source": "archive inspection", "outcome": "absent", "status": "verified", "next_action": "None detected." },
     { "capability": "application records", "source": "archive inspection", "outcome": "absent", "status": "verified", "next_action": "No record export or database-backed content detected." },
     { "capability": "authentication identities", "source": "archive inspection", "outcome": "absent", "status": "verified", "next_action": "None detected." },
     { "capability": "authorization", "source": "archive inspection", "outcome": "absent", "status": "verified", "next_action": "None detected." },
-    { "capability": "external providers and integrations", "source": "archive inspection", "outcome": "preserve", "status": "pending", "next_action": "Inspect app interactions and linked services; retain original callers and providers." },
+    { "capability": "external providers and integrations", "source": "Google Forms endpoints in archive", "outcome": "preserve", "status": "pending", "next_action": "The original contact and careers form endpoints remain in place and the interest form opens its original Google Form; live submissions were not tested to avoid sending test data." },
     { "capability": "public endpoints and callbacks", "source": "archive inspection", "outcome": "absent", "status": "verified", "next_action": "None detected." },
     { "capability": "schedules and webhooks", "source": "archive inspection", "outcome": "absent", "status": "verified", "next_action": "None detected." },
     { "capability": "secrets", "source": "archive inspection", "outcome": "absent", "status": "verified", "next_action": "No application secret variables detected." },
-    { "capability": "cutover", "source": "published source site", "outcome": "pending", "status": "pending", "next_action": "No source URL or cutover request was provided." },
-    { "capability": "verification", "source": "Lovable preview", "outcome": "verify", "status": "pending", "next_action": "Check the migrated public pages, assets, responsive layout, interactions, and browser/build output." }
+    { "capability": "cutover", "source": "published source site", "outcome": "pending", "status": "pending", "next_action": "No source URL was included; public release was declined." },
+    { "capability": "verification", "source": "Lovable preview", "outcome": "verify", "status": "pending", "next_action": "Preview build and typecheck pass; seven routes, all three blog articles, contact form handoff, and 390px layout were checked. Actual Google Forms submissions and public release remain unverified." }
   ]
 }
