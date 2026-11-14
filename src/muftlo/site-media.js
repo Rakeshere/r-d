@@ -17,8 +17,10 @@ import muftloBlog from "@/assets/site-media/muftloBlog.jpg.asset.json";
 import noise from "@/assets/site-media/noise.webp.asset.json";
 import parth from "@/assets/site-media/parth.png.asset.json";
 import shubhWeddings from "@/assets/site-media/shubh Weddings.jpg.asset.json";
+import brandMark from "@/assets/rd-logo-transparent.png.asset.json";
 
 const siteMedia = {
+  "rd-logo.png": brandMark,
   "Anton Tkachev.jpg": antonTkachev,
   "Best Digital Marketing.jpg": bestDigitalMarketing,
   "Dots.jpg": dots,
