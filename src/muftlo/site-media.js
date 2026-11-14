@@ -19,7 +19,6 @@ import parth from "@/assets/site-media/parth.png.asset.json";
 import shubhWeddings from "@/assets/site-media/shubh Weddings.jpg.asset.json";
 import brandMark from "@/assets/rd-logo-transparent.png.asset.json";
 import marketingCampaign from "@/assets/site-media/marketing-promotional-campaign.jpg.asset.json";
-import searchAbode from "@/assets/site-media/Best Digital Marketing.jpg.asset.json";
 import shutterstock from "@/assets/site-media/shutterstock_2502022545.jpg.asset.json";
 import videoProductionCrew from "@/assets/site-media/video-production-crew.jpg.asset.json";
 import digitalMarketingPhotography from "@/assets/site-media/photography-in-digital-marketing.jpg.asset.json";
@@ -40,18 +39,20 @@ import interactiveCard from "@/assets/site-media/interactive-card.jpg.asset.json
 const siteMedia = {
   "rd-logo.png": brandMark,
   "marketing-promotional-campaign.jpg": marketingCampaign,
-  "searchabode-the-best-real-estate-agent-in-jaipur.jpg": searchAbode,
+  "searchabode-the-best-real-estate-agent-in-jaipur.jpg": parth,
   "shutterstock_2502022545.jpg": shutterstock,
   "video-production-crew.jpg": videoProductionCrew,
   "photography-in-digital-marketing.jpg": digitalMarketingPhotography,
   "Cover.Search-engine-marketing.jpg": searchMarketing,
   "blog240624044117.jpg": blogMarketing,
   "google-ads-courses.png": googleAds,
+  "Google-Ads.png": googleLogo,
   "photography-g14011171a.jpg": productPhotography,
   "business-corporate-portraits.webp": businessPortraits,
   "video-production-tips.webp": videoTips,
   "il_fullxfull.6607106719_ha19.jpg": portfolioPhotography,
   "62_1659690052.png": webDevelopment,
+  "Logo-Pastelli.png": pastelli,
   "E-Commerce-Development-Bloom-IT.jpg": ecommerce,
   "webDev.jpg": webDev,
   "Search_Engine_Optimization.webp": seo,
