@@ -4,12 +4,12 @@ import { ArrowRight } from "lucide-react";
 
 // Card anchor points in a 1000 x 760 canvas. Lines drop into the glowing ring.
 const steps = [
-  { n: "01", title: "Research", text: "Audience, market and competitor insights that reveal real opportunities.", x: 3, y: 14, ax: 290, ay: 135, ex: 400, side: "left" },
-  { n: "02", title: "Planning", text: "Clear goals, budgets and a practical roadmap with measurable milestones.", x: 7, y: 33, ax: 330, ay: 280, ex: 440, side: "left" },
-  { n: "03", title: "Defining", text: "Positioning, messaging and a brand voice your audience remembers.", x: 3, y: 52, ax: 290, ay: 425, ex: 470, side: "left" },
-  { n: "04", title: "Designing", text: "Distinctive visuals, websites and content crafted to feel unmistakably you.", x: 69, y: 14, ax: 710, ay: 135, ex: 600, side: "right" },
-  { n: "05", title: "Marketing", text: "Social, SEO and paid campaigns launched across the channels that matter.", x: 65, y: 33, ax: 670, ay: 280, ex: 560, side: "right" },
-  { n: "06", title: "Growth", text: "Tracking, reporting and constant optimisation that compounds results.", x: 69, y: 52, ax: 710, ay: 425, ex: 530, side: "right" },
+  { n: "01", title: "Research", text: "Audience, market and competitor insights that reveal real opportunities.", x: 3, y: 14, ax: 310, ay: 138, ex: 400, side: "left" },
+  { n: "02", title: "Planning", text: "Clear goals, budgets and a practical roadmap with measurable milestones.", x: 7, y: 33, ax: 350, ay: 300, ex: 440, side: "left" },
+  { n: "03", title: "Defining", text: "Positioning, messaging and a brand voice your audience remembers.", x: 3, y: 52, ax: 310, ay: 461, ex: 470, side: "left" },
+  { n: "04", title: "Designing", text: "Distinctive visuals, websites and content crafted to feel unmistakably you.", x: 69, y: 14, ax: 690, ay: 138, ex: 600, side: "right" },
+  { n: "05", title: "Marketing", text: "Social, SEO and paid campaigns launched across the channels that matter.", x: 65, y: 33, ax: 650, ay: 300, ex: 560, side: "right" },
+  { n: "06", title: "Growth", text: "Tracking, reporting and constant optimisation that compounds results.", x: 69, y: 52, ax: 690, ay: 461, ex: 530, side: "right" },
 ];
 
 const RING_Y = 640;
