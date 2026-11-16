@@ -6,6 +6,7 @@ import InfiniteScroll from "@/muftlo/Home/InfiniteScroll";
 import RecentBlogs from "@/muftlo/Home/BlogSection";
 import Testimonials from "@/muftlo/Home/Testimonials";
 import { WobbleCardDemo } from "@/muftlo/Home/ServiceCards";
+import WorkGallery from "@/muftlo/Home/WorkGallery";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
       <InfiniteScroll />
       <Testimonials />
       <RecentBlogs />
+      <WorkGallery />
       <VideoSlider />
     </>
   );
