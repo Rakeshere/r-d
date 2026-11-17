@@ -13,7 +13,7 @@ import {
 import { Button } from "@/muftlo/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { ThreeDMarqueeDemoSecond } from "@/muftlo/Services/ThreeDMarquee";
-import ChooseUs from "@/muftlo/Services/CarouselNow";
+import ServicesShowcase from "@/muftlo/Services/ServicesShowcase";
 import { getSiteMedia } from "@/muftlo/site-media";
 
 export default function ServicesPage() {
@@ -187,7 +187,7 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen">
-      <ChooseUs />
+      <ServicesShowcase />
 
       <section className="py-20 px-6 md:px-4">
         <div className="max-w-7xl mx-auto">
