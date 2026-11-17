@@ -19,7 +19,7 @@ const cardPositions = [
 
 export default function WorkGallery() {
   return (
-    <section aria-labelledby="selected-work-title" className="overflow-hidden bg-brand-navy px-5 py-16 text-brand-cream sm:px-8 md:py-24">
+    <section aria-labelledby="selected-work-title" className="overflow-hidden bg-brand-navy px-5 pb-16 pt-32 text-brand-cream sm:px-8 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-5 md:grid-cols-[1fr_auto] md:items-end">
           <div>
