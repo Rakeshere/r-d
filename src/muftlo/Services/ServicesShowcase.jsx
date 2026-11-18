@@ -57,7 +57,7 @@ export default function ServicesShowcase() {
   }, []);
 
   return (
-    <section aria-label="Explore our services" className="relative isolate flex min-h-[680px] h-[calc(100svh-4.5rem)] max-h-[1000px] w-full overflow-hidden bg-brand-navy text-brand-cream">
+    <section aria-label="Explore our services" className="relative isolate flex h-[100svh] min-h-[100svh] max-h-[1000px] w-full overflow-hidden bg-brand-navy text-brand-cream">
       {services.map((service, index) => (
         <motion.img
           key={service.title}
@@ -115,28 +115,26 @@ export default function ServicesShowcase() {
               return (
                 <motion.div
                   key={service.title}
-                  role="button"
-                  tabIndex={0}
-                  aria-pressed={isActive}
-                  aria-label={`Show ${service.title}`}
-                  onClick={() => setActiveIndex(serviceIndex)}
-                  onKeyDown={(event) => {
-                    if (event.key === "Enter" || event.key === " ") {
-                      event.preventDefault();
-                      setActiveIndex(serviceIndex);
-                    }
-                  }}
                   initial={{ opacity: 0, y: 18 }}
                   animate={{ opacity: 1, y: 0, scale: isActive ? 1 : 0.96 }}
                   transition={{ duration: 0.45, delay: position * 0.055 }}
-                  className={`group relative h-40 w-[112px] shrink-0 cursor-pointer overflow-hidden rounded-md border transition-[height,width,border-color] duration-500 sm:h-48 sm:w-[132px] md:h-56 md:w-[148px] ${isActive ? "border-brand-orange md:h-64 md:w-[176px]" : "border-brand-cream/40"}`}
+                  className={`group relative h-40 w-[112px] shrink-0 overflow-hidden rounded-md border transition-[height,width,border-color] duration-500 sm:h-48 sm:w-[132px] md:h-56 md:w-[148px] ${isActive ? "border-brand-orange md:h-64 md:w-[176px]" : "border-brand-cream/40"}`}
                 >
-                  <img src={service.image} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-brand-navy/95 via-brand-navy/15 to-brand-navy/5" />
-                  <span className="absolute inset-x-2 bottom-2 text-left sm:inset-x-3 sm:bottom-3">
-                    <span className="block text-[9px] font-semibold uppercase tracking-[0.08em] text-brand-orange sm:text-[10px]">0{serviceIndex + 1}</span>
-                    <span className="mt-1 block text-xs font-semibold leading-tight text-brand-cream sm:text-sm">{service.title}</span>
-                  </span>
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    aria-pressed={isActive}
+                    aria-label={`Show ${service.title}`}
+                    onClick={() => setActiveIndex(serviceIndex)}
+                    className="group absolute inset-0 h-full w-full flex-col items-stretch justify-end whitespace-normal rounded-none p-0 text-left hover:bg-transparent"
+                  >
+                    <img src={service.image} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-brand-navy/95 via-brand-navy/15 to-brand-navy/5" />
+                    <span className="relative z-10 mb-2 ml-2 text-left sm:mb-3 sm:ml-3">
+                      <span className="block text-[9px] font-semibold uppercase tracking-[0.08em] text-brand-orange sm:text-[10px]">0{serviceIndex + 1}</span>
+                      <span className="mt-1 block text-xs font-semibold leading-tight text-brand-cream sm:text-sm">{service.title}</span>
+                    </span>
+                  </Button>
                 </motion.div>
               );
             })}

@@ -30,3 +30,4 @@ use the editor.
 <!-- LOVABLE:END -->
 
 - Keep imported R&D site pages and shared UI under `src/muftlo`, with URL pages in `src/routes`, so source presentation remains intact while TanStack owns routing.
+- Keep service-page opening showcase isolated in `src/muftlo/Services`; replacing it must not alter the existing service sections below.
