@@ -73,7 +73,7 @@ export default function ServicesShowcase() {
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-brand-navy/90 via-brand-navy/65 to-brand-navy/20" />
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-brand-navy/85 via-transparent to-brand-navy/20" />
 
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col justify-between px-5 pb-8 pt-12 sm:px-8 sm:pb-10 md:px-12 md:pb-14 md:pt-20 lg:px-16">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col justify-between px-5 pb-8 pt-24 sm:px-8 sm:pb-10 md:px-12 md:pb-14 md:pt-20 lg:px-16">
         <div className="max-w-2xl md:mt-auto md:mb-10">
           <motion.p
             key={`${activeService.title}-location`}
@@ -108,7 +108,7 @@ export default function ServicesShowcase() {
         </div>
 
         <div className="-mx-5 mt-8 overflow-x-auto px-5 pb-2 sm:-mx-8 sm:px-8 md:mx-0 md:mt-0 md:overflow-visible md:px-0 md:pb-0">
-          <div className="flex w-max gap-3 md:w-full md:justify-end md:gap-4">
+          <div className="flex w-max gap-3 lg:grid lg:w-full lg:grid-cols-6 lg:items-end lg:gap-4">
             {orderedServices.map((service, position) => {
               const serviceIndex = services.findIndex((item) => item.title === service.title);
               const isActive = serviceIndex === activeIndex;
@@ -116,9 +116,9 @@ export default function ServicesShowcase() {
                 <motion.div
                   key={service.title}
                   initial={{ opacity: 0, y: 18 }}
-                  animate={{ opacity: 1, y: 0, scale: isActive ? 1 : 0.96 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.45, delay: position * 0.055 }}
-                  className={`group relative h-40 w-[112px] shrink-0 overflow-hidden rounded-md border transition-[height,width,border-color] duration-500 sm:h-48 sm:w-[132px] md:h-56 md:w-[148px] ${isActive ? "border-brand-orange md:h-64 md:w-[176px]" : "border-brand-cream/40"}`}
+                  className={`group relative h-48 w-[132px] shrink-0 overflow-hidden rounded-md border transition-colors duration-300 sm:h-52 sm:w-[148px] lg:h-60 lg:w-full ${isActive ? "border-brand-orange" : "border-brand-cream/40"}`}
                 >
                   <Button
                     type="button"
@@ -130,9 +130,9 @@ export default function ServicesShowcase() {
                   >
                     <img src={service.image} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-brand-navy/95 via-brand-navy/15 to-brand-navy/5" />
-                    <span className="relative z-10 mb-2 ml-2 text-left sm:mb-3 sm:ml-3">
-                      <span className="block text-[9px] font-semibold uppercase tracking-[0.08em] text-brand-orange sm:text-[10px]">0{serviceIndex + 1}</span>
-                      <span className="mt-1 block text-xs font-semibold leading-tight text-brand-cream sm:text-sm">{service.title}</span>
+                    <span className="relative z-10 mb-2 ml-2 mr-2 min-h-12 text-left sm:mb-3 sm:ml-3 sm:mr-3 sm:min-h-14">
+                      <span className="block text-[10px] font-semibold uppercase text-brand-orange">0{serviceIndex + 1}</span>
+                      <span className="mt-1 block min-h-8 text-xs font-semibold leading-tight text-brand-cream sm:text-sm">{service.title}</span>
                     </span>
                   </Button>
                 </motion.div>
