@@ -107,8 +107,8 @@ export default function ServicesShowcase() {
           </Button>
         </div>
 
-        <div className="-mx-5 mt-8 overflow-x-auto px-5 pb-2 sm:-mx-8 sm:px-8 md:mx-0 md:mt-0 md:overflow-visible md:px-0 md:pb-0">
-          <div className="flex w-max gap-3 md:w-full md:justify-end md:gap-4">
+        <div className="-mx-5 mt-8 overflow-x-auto px-5 pb-2 sm:-mx-8 sm:px-8 md:mx-0 md:mt-0 md:px-0 md:pb-0 xl:overflow-visible">
+          <div className="flex w-max gap-3 md:gap-4 xl:w-full xl:justify-end">
             {orderedServices.map((service, position) => {
               const serviceIndex = services.findIndex((item) => item.title === service.title);
               const isActive = serviceIndex === activeIndex;
@@ -116,9 +116,9 @@ export default function ServicesShowcase() {
                 <motion.div
                   key={service.title}
                   initial={{ opacity: 0, y: 18 }}
-                  animate={{ opacity: 1, y: 0, scale: isActive ? 1 : 0.96 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.45, delay: position * 0.055 }}
-                  className={`group relative h-40 w-[112px] shrink-0 overflow-hidden rounded-md border transition-[height,width,border-color] duration-500 sm:h-48 sm:w-[132px] md:h-56 md:w-[148px] ${isActive ? "border-brand-orange md:h-64 md:w-[176px]" : "border-brand-cream/40"}`}
+                  className={`group relative h-40 w-[112px] shrink-0 overflow-hidden rounded-md border transition-colors duration-300 sm:h-48 sm:w-[132px] md:h-56 md:w-[148px] xl:h-64 xl:w-[176px] ${isActive ? "border-brand-orange" : "border-brand-cream/40"}`}
                 >
                   <Button
                     type="button"
